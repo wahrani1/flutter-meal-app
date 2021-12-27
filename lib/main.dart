@@ -53,7 +53,6 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: Colors.teal,
-        accentColor: Colors.tealAccent,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyText1: TextStyle(
@@ -78,7 +77,7 @@ class _MyAppState extends State<MyApp> {
                 fontFamily: 'RobotoCondensed',
                 fontWeight: FontWeight.bold,
               ),
-            ),
+            ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.tealAccent),
       ),
       // home: TabScreen(),
       routes: {
